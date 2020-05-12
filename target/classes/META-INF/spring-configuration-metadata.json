@@ -1,0 +1,50 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.demo.security.configuration.SecurityProperties",
+      "name": "cep.security",
+      "type": "com.example.demo.security.configuration.SecurityProperties"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.AuthRedisProperties",
+      "name": "cep.security.redis",
+      "type": "com.example.demo.security.configuration.AuthRedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.demo.security.configuration.AuthRedisProperties",
+      "defaultValue": 0,
+      "name": "cep.security.redis.database",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.AuthRedisProperties",
+      "name": "cep.security.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.AuthRedisProperties",
+      "name": "cep.security.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.AuthRedisProperties",
+      "name": "cep.security.redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.SecurityProperties",
+      "name": "cep.security.with-out-authorization",
+      "description": "不登陆放行页面 不需要token和权限 逗号分隔",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.example.demo.security.configuration.SecurityProperties",
+      "name": "cep.security.with-out-permission",
+      "description": "需要登陆但不需要权限的接口",
+      "type": "java.lang.String[]"
+    }
+  ]
+}
